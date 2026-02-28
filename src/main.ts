@@ -11,7 +11,7 @@ async function bootstrap() {
     .build();
 //this creates api documentation automaticall;y
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
-  await app.listen(process.env.PORT ?? 3000);
+  SwaggerModule.setup('api', app, document);  //give /api to get data
+  await app.listen(process.env.PORT ?? 3000); //give 3000 port Number
 }
 bootstrap();
