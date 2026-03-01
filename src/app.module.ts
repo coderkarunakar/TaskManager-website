@@ -3,6 +3,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { AuthModule } from './auth/auth.module';
+import { AuthnestController } from './g/authnest/authnest.controller';
 
 
 
@@ -19,7 +21,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       synchronize: true, //typeORM automatically created database
     }),
     UsersModule,
+    AuthModule,
   ],
+  controllers: [AuthnestController],
   
 })
 export class AppModule {}
