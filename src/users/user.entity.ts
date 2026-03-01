@@ -12,4 +12,7 @@ export class User {
   @Column() //column name is emain
   email: string;
 
+  @Column()  //password
+  password: string;
+
 }
