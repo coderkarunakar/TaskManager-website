@@ -16,7 +16,7 @@ import { AuthnestController } from './g/authnest/authnest.controller';
       port: 5432,
       username: 'postgres',
       password: 'postgres',
-      database: 'task_manager_db',
+      database: 'task_manager_db',  
       autoLoadEntities: true,
       synchronize: true, //typeORM automatically created database
     }),
